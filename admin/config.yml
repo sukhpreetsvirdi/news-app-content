@@ -15,15 +15,7 @@ public_folder: "/images"
 collections:
   - name: "articles"
     label: "Articles"
-    files:
-      - file: "articles.json"
-        label: "All Articles"
-        name: "articles"
-        fields:
-          - label: "Articles"
-            name: "articles"
-            widget: "list"
-            fields:
+    fields:
           - { label: "ID", name: "id", widget: "uuid", prefix: "article-", hint: "Auto-generated, no need to touch" }
           - { label: "Title", name: "title", widget: "string", hint: "The main headline" }
           - label: "Category"
