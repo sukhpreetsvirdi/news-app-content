@@ -1,0 +1,14 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "Sample Headline",
+      "summary": "A short one-line summary of the article.",
+      "content": "The full article body text goes here.",
+      "image": "https://example.com/image.jpg",
+      "category": "Technology",
+      "author": "Reporter Name",
+      "publishedAt": "2026-09-08T10:00:00Z"
+    }
+  ]
+}
