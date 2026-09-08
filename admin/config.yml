@@ -34,5 +34,6 @@ collections:
               - { label: "Published At", name: "publishedAt", widget: "datetime" }
               - { label: "Summary", name: "summary", widget: "text", hint: "One or two sentences shown under the headline" }
               - { label: "Image", name: "image", widget: "cloudinaryUpload" }
-              - { label: "Video (optional)", name: "video", widget: "cloudinaryUpload", required: false }
+              - { label: "Video (upload, under 100MB)", name: "video", widget: "cloudinaryUpload", required: false }
+              - { label: "YouTube Link (for longer videos)", name: "youtubeUrl", widget: "string", required: false, hint: "Paste a YouTube link here instead, if the video is over 100MB" }
               - { label: "Content", name: "content", widget: "markdown" }
