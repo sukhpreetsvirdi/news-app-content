@@ -1,24 +1,16 @@
 {
   "articles": [
     {
-      "id": "1",
-      "title": "Sample Headline",
-      "summary": "A short one-line summary of the article.",
-      "content": "The full article body text goes here.",
-      "image": "https://example.com/image.jpg",
-      "category": "Technology",
-      "author": "Reporter Name",
-      "publishedAt": "2026-09-08T10:00:00Z"
-    },
-    {
-      "id": "2",
-      "title": "new articl sample 2",
-      "summary": "just testing it ",
-      "content": "**new content with the same color font anfd thing**",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRX9KOZodqOotx2l6ndK2joKdpdNbNfgQyX-bavYo-lswWJBCcz9F--O8VOMt9gk&s=10&ec=121966374",
-      "category": "photography ",
+      "publishedAt": "2026-09-08T20:01:00.000+05:30",
+      "summary": "new tst",
       "author": "Sukhpreet Singh",
-      "publishedAt": "2026-09-08T16:43:00.000+05:30"
+      "youtubeUrl": "https://youtu.be/OG7_pLGEmvo?si=0ep2QI095sza-Y4U",
+      "title": "testing ",
+      "content": "* ###### ***new testing element*** \\\n  eggfegsfdfd\\\n  dfgjhk\\\n  \\\n  fhjdhh\\\n  fdgh",
+      "video": "https://res.cloudinary.com/c4xlkkdk/video/upload/v1788878024/njmua1qppezh3khyuams.mp4",
+      "id": "article-60a96a4c-0697-4f0f-8808-deec0b723f75",
+      "image": "https://res.cloudinary.com/c4xlkkdk/image/upload/v1788877934/brjfjs4hqsaxyrbqq6hl.png",
+      "category": "Sports"
     }
   ]
 }
