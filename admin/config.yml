@@ -3,7 +3,7 @@ backend:
   repo: sukhpreetsvirdi/news-app-content
   branch: main
   
-  media_library:
+media_library:
   name: cloudinary
   config:
     cloud_name: c4xlkkdk
