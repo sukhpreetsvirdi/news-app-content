@@ -9,6 +9,16 @@
       "category": "Technology",
       "author": "Reporter Name",
       "publishedAt": "2026-09-08T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "new articl sample 2",
+      "summary": "just testing it ",
+      "content": "**new content with the same color font anfd thing**",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwRX9KOZodqOotx2l6ndK2joKdpdNbNfgQyX-bavYo-lswWJBCcz9F--O8VOMt9gk&s=10&ec=121966374",
+      "category": "photography ",
+      "author": "Sukhpreet Singh",
+      "publishedAt": "2026-09-08T16:43:00.000+05:30"
     }
   ]
 }
