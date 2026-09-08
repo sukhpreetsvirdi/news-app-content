@@ -7,7 +7,7 @@ backend:
   name: cloudinary
   config:
     cloud_name: c4xlkkdk
-    api_key: YOUR_API_KEY
+    api_key: 879488872443899
 
 media_folder: "images"
 public_folder: "/images"
