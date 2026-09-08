@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: sukhpreetsvirdi/news-app-content
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    files:
+      - file: "articles.json"
+        label: "All Articles"
+        name: "articles"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Content", name: "content", widget: "markdown" }
+              - { label: "Image URL", name: "image", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Published At", name: "publishedAt", widget: "datetime" }
