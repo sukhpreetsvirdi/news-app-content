@@ -33,6 +33,6 @@ collections:
               - { label: "Author", name: "author", widget: "string" }
               - { label: "Published At", name: "publishedAt", widget: "datetime" }
               - { label: "Summary", name: "summary", widget: "text", hint: "One or two sentences shown under the headline" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Video (optional)", name: "video", widget: "file", required: false }
+              - { label: "Image", name: "image", widget: "cloudinaryUpload" }
+              - { label: "Video (optional)", name: "video", widget: "cloudinaryUpload", required: false }
               - { label: "Content", name: "content", widget: "markdown" }
