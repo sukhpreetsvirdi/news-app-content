@@ -2,7 +2,7 @@ backend:
   name: github
   repo: sukhpreetsvirdi/news-app-content
   branch: main
-  
+
 media_library:
   name: cloudinary
   config:
@@ -15,16 +15,24 @@ public_folder: "/images"
 collections:
   - name: "articles"
     label: "Articles"
-    fields:
-          - { label: "ID", name: "id", widget: "uuid", prefix: "article-", hint: "Auto-generated, no need to touch" }
-          - { label: "Title", name: "title", widget: "string", hint: "The main headline" }
-          - label: "Category"
-            name: "category"
-            widget: "select"
-            options: ["Technology", "Sports", "Politics", "Business", "Entertainment", "World", "Health"]
-          - { label: "Author", name: "author", widget: "string" }
-          - { label: "Published At", name: "publishedAt", widget: "datetime" }
-          - { label: "Summary", name: "summary", widget: "text", hint: "One or two sentences shown under the headline" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Video (optional)", name: "video", widget: "file", required: false }
-          - { label: "Content", name: "content", widget: "markdown" }
+    files:
+      - file: "articles.json"
+        label: "All Articles"
+        name: "articles"
+        fields:
+          - label: "Articles"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "uuid", prefix: "article-", hint: "Auto-generated, no need to touch" }
+              - { label: "Title", name: "title", widget: "string", hint: "The main headline" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options: ["Technology", "Sports", "Politics", "Business", "Entertainment", "World", "Health"]
+              - { label: "Author", name: "author", widget: "string" }
+              - { label: "Published At", name: "publishedAt", widget: "datetime" }
+              - { label: "Summary", name: "summary", widget: "text", hint: "One or two sentences shown under the headline" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Video (optional)", name: "video", widget: "file", required: false }
+              - { label: "Content", name: "content", widget: "markdown" }
