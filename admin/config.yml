@@ -24,12 +24,15 @@ collections:
             name: "articles"
             widget: "list"
             fields:
-              - { label: "ID", name: "id", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Summary", name: "summary", widget: "text" }
-              - { label: "Content", name: "content", widget: "markdown" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Video (optional)", name: "video", widget: "file", required: false }
-              - { label: "Category", name: "category", widget: "string" }
-              - { label: "Author", name: "author", widget: "string" }
-              - { label: "Published At", name: "publishedAt", widget: "datetime" }
+          - { label: "ID", name: "id", widget: "uuid", prefix: "article-", hint: "Auto-generated, no need to touch" }
+          - { label: "Title", name: "title", widget: "string", hint: "The main headline" }
+          - label: "Category"
+            name: "category"
+            widget: "select"
+            options: ["Technology", "Sports", "Politics", "Business", "Entertainment", "World", "Health"]
+          - { label: "Author", name: "author", widget: "string" }
+          - { label: "Published At", name: "publishedAt", widget: "datetime" }
+          - { label: "Summary", name: "summary", widget: "text", hint: "One or two sentences shown under the headline" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Video (optional)", name: "video", widget: "file", required: false }
+          - { label: "Content", name: "content", widget: "markdown" }
